@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Donor from "./Donor";
+import Donor from "./DonorBtn";
 import Carousel from 'react-bootstrap/Carousel';
 
 class Slides extends Component {

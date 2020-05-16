@@ -1,23 +1,29 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import { Card,Button } from 'react-bootstrap';
+import Donor from "./DonorBtn";
 import {Data} from "./Data";
 
 class Cause extends Component {
     render() {
         return (
-            <div className="row">
-                {
-                     Data.map(item=>
-                    <Card className="col ma2 col-sm-3 " style={{ width: '8rem' }} key={item.id}>
-                   <Card.Img variant="top" src={item.imageSrc} />
-                    <Card.Body>
-                    <Card.Title>₦ 0 Raised / Goal: unlimited</Card.Title>
-                    <Card.Text>{item.category}</Card.Text>
-                    <Button variant="warning">DONATION</Button>
-                </Card.Body>
-             </Card>
-              )}
-            </div>
+           <div>
+                <div className="container">
+                    <div className="row mb3">
+                        {
+                            Data.map(item =>
+                                <Card className="center col-sm-3 mt6" style={{ width: '18rem' }} key={item.id}>
+                                    <Card.Img variant="top" src={item.imageSrc} alt="cardImage" width='100px' />
+                                    <Card.Body>
+                                        <p>₦ 0 Raised / Goal: <span className="text-warning">unlimited</span></p>
+                                        <strong className="pointer">{item.category}</strong>
+                                    </Card.Body>
+                                    <a className="pointer center pa2 mb3 b--light-green bg-warning" href="/youthTraining">DONATE</a>
+                                </Card>
+                            )}
+                    </div>
+                </div>
+                    <Donor/>
+           </div>
         )
     }
 }
