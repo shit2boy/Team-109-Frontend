@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {BrowserRouter as Router, Route,Link, Switch} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Navigation  from "./components/NavBar";
 import Slides  from "./components/Carousel";
 import Cause  from "./components/Cause";

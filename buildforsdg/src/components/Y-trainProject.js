@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {Data} from "./Data";
+import DonateNow from './DonateNow';
 
 export class Youthproject extends Component {
     constructor(props){
@@ -31,18 +32,14 @@ export class Youthproject extends Component {
                             <span className="ma1 pa2 bg-warning">Amount</span>
                         </div>
                         <div  className="offset-4 mt4">
-                           <input className="bg-warning pa2" type="submit" value="Donate Now" />
+                           {/* <input className="bg-warning pa2" type="submit" value="Donate Now" /> */}
+                           <p className="bg-warning w-30 tc pa1 pointer"><DonateNow /></p>
                         </div>
                         <hr/>
                         <em className="ma3">comments </em>
                    </div>
                    <div className="col-sm">
-                       {/* <h3>What is Crowd-Funding about?</h3>
-                       <p>
-                            Crowdfunding is a new type of fundraising where you can raise funds for your own personal cause, 
-                            even if you're not a registered charity.
-                       </p>
-                       <p className="ml-auto hover-yellow">BE A VOLUNTEER</p> */}
+                      
                        <div className="pa3 w-70 bg-gray">
                            <input className="bg-warning pa2 w-70" type="text" name ="search" onChange={this.onSearchField} placeholder="Search here" />
                        </div>
