@@ -1,12 +1,12 @@
 import React from "react";
-import Formfield from "./Formfield";
+import {Formfield} from "./UserForm";
 import { Button, Modal } from "react-bootstrap";
 
 class DonateNow extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isPaymentType: true,
+      isPaymentType: undefined,
       modalShow: false,
       modalTitle: "",
     };
@@ -50,56 +50,52 @@ class DonateNow extends React.Component {
           <Modal.Header className="tc" closeButton>
             {this.state.modalTitle}
           </Modal.Header>
-          <Modal.Body className="center">
+          <Modal.Body className="center w-70">
             <form onSubmit={this.onSubmit}>
-              <label>Credit card:</label>
+              <div className ="d-flex w-70">
+              <span> Credit Card:
               <Formfield
-                name="isPaymentType"
+                //  label= {"Credit card"}
+                name={"isPaymentType"}
                 type="checkbox"
                 checked={this.state.isPaymentType}
                 onChange={this.handleInputChange}
               />
-
-              <label>
-                Paypal:
+              </span>
+                <span> Paypal
                 <Formfield
-                  name="isPaymentType"
-                  type="checkbox"
+                // label= {"Paypal"}
+                  name={"isPaymentType"}
+                  type={"checkbox"}
                   checked={this.state.isPaymentType}
                   onChange={this.handleInputChange}
                 />
-              </label>
-              <br />
-              <label>
-                First name:
-                <Formfield
-                  className=" pa2 w-100 ml1"
+                </span>
+              </div>
+              <Formfield
+                  label= {"Firstname"}
                   name="firstName"
                   type="text"
                   value={this.state.firstname}
                   onChange={this.handleInputChange}
                 />
-              </label>
-              <label>
-                Lastname:
-                <Formfield
+              <Formfield
+               label= {"Lastname"}
                   className=" w-100"
                   name="lastName"
                   type="text"
                   value={this.state.lastname}
                   onChange={this.handleInputChange}
                 />
-              </label>
-              <br />
-              <label>
-                Email:
-                <Formfield
+              
+              <Formfield
+                   label= {"Email"}
                   name="email"
                   type="email"
                   value={this.state.email}
                   onChange={this.handleInputChange}
                 />
-              </label>
+             
               <Button
                 className="w-100 bg-warning"
                 variant="success"
