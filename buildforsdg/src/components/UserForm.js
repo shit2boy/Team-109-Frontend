@@ -25,60 +25,48 @@ class SelectLGA extends React.Component {
     super();
     this.state = {
       LGA: [],
-      selected_area: ''
-      
+      selected_area: "",
     };
     this.handleSelect = this.handleSelect.bind(this);
   }
-    componentDidMount() {
-      fetch("http://locationsng-api.herokuapp.com/api/v1/states/lagos/lgas")
-      .then(response => {
+  componentDidMount() {
+    fetch("http://locationsng-api.herokuapp.com/api/v1/states/lagos/lgas")
+      .then((response) => {
         return response.json();
       })
-      .then(data => {
+      .then((data) => {
         this.setState({ LGA: data });
       });
-    }
-  
-    handleSelect = event => {
-      this.setState({ selected_area: [event.target.value] });
-    };
+  }
 
+  handleSelect = (event) => {
+    this.setState({ selected_area: event.target.value });
+  };
 
-  
-  render( ) {
-
-    // let select_Planets = this.state.planets.map(planet => {
-    //   return planet.name;
-    // });
-    // let options = select_Planets.map(planet => (
-    //   <option key={planet} value={planet}>
-    //     {planet}
-    //   </option>
-    // ));
-
-
+  render() {
     const selectedOption = Object.values(this.state.selected_area);
 
     const options = this.state.LGA.filter(
-      p => !selectedOption.find(sP => sP === p) || p === this.state.selected_area
+      (p) =>
+        !selectedOption.find((sP) => sP === p) || p === this.state.selected_area
     );
 
     return (
-      <label> Select your L.G.A 
-      <select className ="pa2 "
-      name="selected_area"
-     
-         onChange={this.handleSelect}
-        value = {this.state.selected_area}
-        
-      >
-        <option> Select LGA </option>
-        {options}
-         {options.map(o => (
+      <label>
+        {" "}
+        Select your L.G.A
+        <select
+          className="pa2 "
+          name="selected_area"
+          onChange={this.handleSelect}
+          value={this.state.selected_area}
+        >
+          <option> Select LGA </option>
+          {options}
+          {options.map((o) => (
             <option key={o}>{o}</option>
-          ))} 
-      </select>
+          ))}
+        </select>
       </label>
     );
   }
@@ -109,8 +97,7 @@ class Userform extends Component {
 
   onSubmit(event) {
     event.preventDefault();
-    this.setState({ [event.target.name ]: event.target,
-    });
+    this.setState({ [event.target.name]: event.target });
   }
   render() {
     return (
@@ -142,7 +129,7 @@ class Userform extends Component {
           value={this.state.email}
           onChange={this.handleInputChange}
         />
-        <SelectLGA/>
+        <SelectLGA />
         <Formfield
           label={"Password"}
           className=" w-100"

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Data} from "./Data";
+import {Data} from "../utils/Data";
 import DonateNow from './DonateNow';
 
 export class Youthproject extends Component {
