@@ -26,7 +26,7 @@ import {Userform} from "./UserForm"
            
             <Modal
             closeButton
-            size="md"
+            size="lg"
             aria-labelledby="contained-modal-title-vcenter"
             centered
             show={this.state.modalShow}

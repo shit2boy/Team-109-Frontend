@@ -21,8 +21,8 @@ function Formfield(props) {
 }
 
 class SelectLGA extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       LGA: [],
       selected_area: "",
@@ -53,10 +53,9 @@ class SelectLGA extends React.Component {
 
     return (
       <label>
-        {" "}
         Select your L.G.A
         <select
-          className="pa2 "
+          className="pa2 w-100 "
           name="selected_area"
           onChange={this.handleSelect}
           value={this.state.selected_area}
@@ -97,7 +96,7 @@ class Userform extends Component {
 
   onSubmit(event) {
     event.preventDefault();
-    this.setState({ [event.target.name]: event.target });
+    // this.setState({ [event.target.name]: event.target });
   }
   render() {
     return (
@@ -129,7 +128,7 @@ class Userform extends Component {
           value={this.state.email}
           onChange={this.handleInputChange}
         />
-        <SelectLGA />
+        <div className="w-100" ><SelectLGA /></div>
         <Formfield
           label={"Password"}
           className=" w-100"

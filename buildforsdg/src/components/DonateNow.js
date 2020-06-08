@@ -23,6 +23,10 @@ class DonateNow extends React.Component {
       [name]: value,
     });
   }
+  onSubmit(event){
+    event.preventDefault();
+
+}
   setModalHide = () => {
     this.setState({ modalShow: false, modalTitle: "" });
   };
@@ -37,7 +41,7 @@ class DonateNow extends React.Component {
   render() {
     return (
       <div>
-        <p onClick={() => this.setModalShow(true)}>Donate Now</p>
+        <p onClick={() => this.setModalShow(true)}>DONATE NOW</p>
 
         <Modal
           closeButton
@@ -50,8 +54,8 @@ class DonateNow extends React.Component {
           <Modal.Header className="tc" closeButton>
             {this.state.modalTitle}
           </Modal.Header>
-          <Modal.Body className="center w-70">
-            <form onSubmit={this.onSubmit}>
+          <Modal.Body className=" bg-warning">
+            <form onSubmit={this.onSubmit}  className ="center w-70" >
               <div className ="d-flex w-70">
               <span> Credit Card:
               <Formfield

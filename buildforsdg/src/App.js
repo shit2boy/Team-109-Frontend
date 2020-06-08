@@ -21,7 +21,7 @@ import Footer from './components/Footer';
             <Route exact path="/" component={Slides}/>
            <Route path="/cause" component={Cause} />
            <Route path="/about" component={About} />
-           <Route path="/donorForm" component={Userform} />
+           <Route path="/donor" component={Userform} />
             <Route path="/youthTraining" component={Youthproject} />
           </Switch>
         </Router>
