@@ -25,7 +25,7 @@ export class Youthproject extends Component {
                         <div className="mt4" ><h5 className="tc">Youth Training Project</h5></div>
                         <div  className="offset-4 mt4">
                             <span  className="border pa2 bg-light-gray ">#</span> 
-                           <input className="pa1 w-20 " type="text" name ="amount" onChange={this.onSearchField} placeholder="1.00" />
+                           <input className="pa1 w-20 " type="number" name ="amount" onChange={this.onSearchField} placeholder="1.00" />
                         </div>
                         <div className="mt4 w-20">
                             <span className="bg-warning pa2">{this.state.amount}</span>
