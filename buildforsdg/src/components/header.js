@@ -4,8 +4,8 @@ import DonateNow from './DonateNow';
 
 export default function Heeader() {
   return (
-    <div className=" " > 
-    <nav className='bg-gray'>
+    <div> 
+    <nav className=''>
         {/* <a className="navbar-brand" href="/"><img src={process.env.PUBLIC_URL + '/images/Teamlogo.png'} alt="BrandLogo" width="45" /></a> */}
         <ul className="nav justify-content-center ">
           <li className="nav-item bg-warning">
