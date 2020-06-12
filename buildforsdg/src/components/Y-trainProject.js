@@ -21,7 +21,7 @@ export class Youthproject extends Component {
             <div className="container center mb3">
                 <div className="row mt5">
                    <div className="col-sm">
-                       <img src={process.env.PUBLIC_URL + '/images/alc_acad.jpg'} alt="alc_acad" />
+                       <img src="https://res.cloudinary.com/undercover/image/upload/v1591966071/BuildForSDG/Images/y6d7yagfxab1bsmtpmb8.jpg" alt="alc_acad" />
                         <div className="mt4" ><h5 className="tc">Youth Training Project</h5></div>
                         <div  className="offset-4 mt4">
                             <span  className="border pa2 bg-light-gray ">#</span> 

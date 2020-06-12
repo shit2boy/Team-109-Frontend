@@ -10,7 +10,7 @@ class Footer extends Component {
             <footer className ="container mw-100 h-50 mt0" style= {{backgroundColor: "#4d4d4d"}}>
                 <div className ="row pa3">
                     <div className="col-5 offset justify-content-center">
-                        <img src={process.env.PUBLIC_URL + '/images/Teamlogo.png'} alt="BrandLogo" width="90px" /> <br/>
+                        <img src="https://res.cloudinary.com/undercover/image/upload/v1591966072/BuildForSDG/Images/txnsb2ypcmsrvftvfthq.png" alt="BrandLogo" width="90px" /> <br/>
                         <p>
                         Join the movement for better life…
                         </p>

@@ -12,7 +12,7 @@ class Slides extends Component {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src={process.env.PUBLIC_URL + '/images/Slide1.jpg'}
+                        src="https://res.cloudinary.com/undercover/image/upload/v1591966073/BuildForSDG/Images/e6ofs8ywq0s3tjba26q9.jpg"
                         alt="First slide"
                         height="500"/>
                     <Carousel.Caption>
@@ -23,7 +23,7 @@ class Slides extends Component {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src={process.env.PUBLIC_URL + '/images/sdgslide.jpg'}
+                        src="https://res.cloudinary.com/undercover/image/upload/v1591966113/BuildForSDG/Images/e11ls31lc8iictsnn9jy.jpg"
                         alt="Third slide"
                         height="500"
                        
@@ -37,7 +37,7 @@ class Slides extends Component {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src={process.env.PUBLIC_URL + '/images/slidec.jpg'}
+                        src="https://res.cloudinary.com/undercover/image/upload/v1591966088/BuildForSDG/Images/qol3uo2knctmswkshpit.jpg"
                         alt="Third slide"
                         height="500"
                        

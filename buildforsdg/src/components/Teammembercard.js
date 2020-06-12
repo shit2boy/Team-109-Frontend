@@ -20,7 +20,7 @@ const TeamCard = () => {
               {/* <TeamCard member={member} /> */}
               <div className="card ma3 border-lime">
                 <img
-                  src={process.env.PUBLIC_URL + '/images/profile.jpg'}
+                  src="https://res.cloudinary.com/undercover/image/upload/v1591966010/BuildForSDG/Images/hpurh5k8ocphuin9d3lh.jpg"
                   height="150"
                   width="150"
                   className="card-img-top"
