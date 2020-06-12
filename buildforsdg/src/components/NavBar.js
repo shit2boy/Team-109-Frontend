@@ -8,7 +8,7 @@ import SignUp from "./SignUP";
 class Navigation extends Component {
   render() {
     return (
-      <Navbar collapseOnSelect expand="lg" className="bg-gray" variant="light">
+      <Navbar collapseOnSelect expand="lg" className="bg-light-yellow" variant="light">
         <Navbar.Brand href="/">
           <img
             src={process.env.PUBLIC_URL + "/images/Teamlogo.png"}

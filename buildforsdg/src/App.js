@@ -27,11 +27,7 @@ import Footer from './components/Footer';
         </Router>
         <Footer />
       </React.Fragment>
-      // <div>
-      //   
-      //   
-      //   <Footer/>
-      // </div>
+      
     )
   }
 }

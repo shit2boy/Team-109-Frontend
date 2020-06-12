@@ -13,7 +13,8 @@ const TeamCard = () => {
         {memberDetails.map((member) => {
           return (
             <div
-              className="col-xs-12 col-sm-3 col-md-3 no-gutters"
+              className="col-xs-12 col-sm-3 col-md-3 no-gutters animated slideInDown"
+              style={{animationDelay: "1s"}}
               key={member.id}
             >
               {/* <TeamCard member={member} /> */}
