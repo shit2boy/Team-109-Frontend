@@ -11,7 +11,7 @@ class Navigation extends Component {
       <Navbar collapseOnSelect expand="lg" className="bg-light-yellow" variant="light">
         <Navbar.Brand href="/">
           <img
-            src={process.env.PUBLIC_URL + "/images/Teamlogo.png"}
+            src="https://res.cloudinary.com/undercover/image/upload/v1591966072/BuildForSDG/Images/txnsb2ypcmsrvftvfthq.png"
             alt="BrandLogo"
             width="55"
           />{" "}
