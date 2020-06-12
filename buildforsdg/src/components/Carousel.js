@@ -14,9 +14,7 @@ class Slides extends Component {
                         className="d-block w-100"
                         src={process.env.PUBLIC_URL + '/images/Slide1.jpg'}
                         alt="First slide"
-                        height="500"
-                       
-                    />
+                        height="500"/>
                     <Carousel.Caption>
                         <h3 className="animated slideInLeft" style={{animationDelay: "1s"}}>JOIN OVER MILLION PEOPLE SUPPORTING CROWDFUNDING....</h3>
                         {/* <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
