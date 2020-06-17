@@ -14,7 +14,8 @@ class Slides extends Component {
                         className="d-block w-100"
                         src="https://res.cloudinary.com/undercover/image/upload/v1591966073/BuildForSDG/Images/e6ofs8ywq0s3tjba26q9.jpg"
                         alt="First slide"
-                        height="500"/>
+                        height="550"
+                        />
                     <Carousel.Caption>
                         <h3 className="animated slideInLeft" style={{animationDelay: "1s"}}>JOIN OVER MILLION PEOPLE SUPPORTING CROWDFUNDING....</h3>
                         {/* <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
@@ -25,7 +26,7 @@ class Slides extends Component {
                         className="d-block w-100"
                         src="https://res.cloudinary.com/undercover/image/upload/v1591966113/BuildForSDG/Images/e11ls31lc8iictsnn9jy.jpg"
                         alt="Third slide"
-                        height="500"
+                        height="550"
                        
                     />
 
@@ -39,12 +40,12 @@ class Slides extends Component {
                         className="d-block w-100"
                         src="https://res.cloudinary.com/undercover/image/upload/v1591966088/BuildForSDG/Images/qol3uo2knctmswkshpit.jpg"
                         alt="Third slide"
-                        height="500"
+                        height="550"
                        
                     />
 
                     <Carousel.Caption>
-                    <h3 class="animated zoomIn" style={{animationDelay: "1s"}}>““We showed that we are united and that we, young people, are unstoppable.”— Greta Thunberg</h3>
+                    <h3 class="animated zoomIn" style={{animationDelay: "1s"}}>“We showed that we are united and that we, young people, are unstoppable.”— Greta Thunberg</h3>
                         {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
                     </Carousel.Caption>
                 </Carousel.Item>

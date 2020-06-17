@@ -18,7 +18,7 @@ class Navigation extends Component {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className=" p-2 ml-auto">
+          <Nav className=" ml-auto">
             <Nav.Link
               href="/"
               className="br hover-bg-white-60 active text-white"
